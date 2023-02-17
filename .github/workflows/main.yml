@@ -34,6 +34,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Print node version
-        run: node --versopn
+        run: node --version
       - name: Print NPM version
         run: npm --version
