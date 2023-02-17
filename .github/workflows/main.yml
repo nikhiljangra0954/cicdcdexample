@@ -1,1 +1,39 @@
-# : workflow
+# #  workflow
+# # read to understand the series of steps and work witht it 
+
+# # it store in the kep values and some data structures are like strings array and obejects
+
+# title: Website Name
+# description: Fontend website
+
+# #Arrays
+
+# tags:
+#   - technology
+#   - imagse
+#   - videos
+
+# # spaces matter and don't mess with the syntax of yaml
+
+
+# # Objects 
+
+# address:
+#   city: Banglore
+#   pin: 22323
+#   state: KA
+
+# git hub ==> 
+name : github actions example
+on:
+  push:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print node version
+        run: node --versopn
+      - name: Print NPM version
+        run: npm --version
